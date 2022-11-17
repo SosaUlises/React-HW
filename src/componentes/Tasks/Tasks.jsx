@@ -1,9 +1,13 @@
 import React from 'react'
 import TaskContainerStyled from './TasksContainer'
+import { TaskCardStyled } from './TasksContainer'
 
-const Tasks = () => {
+
+const Tasks = ({children}) => {
   return (
-    <TaskContainerStyled>Caja</TaskContainerStyled>
+    <TaskContainerStyled>
+      <TaskCardStyled>{children}</TaskCardStyled>
+    </TaskContainerStyled>
   )
 }
 

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const AnotarContainer = styled.div`
+const ControladorContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 50vw;
 `
 
-export default AnotarContainer;
+export default ControladorContainer;
