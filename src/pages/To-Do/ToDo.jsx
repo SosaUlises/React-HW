@@ -1,16 +1,16 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import TodoContainer, { Form } from "./ContainerStyled"
-import Tasks from '../Tasks/Tasks'
+import Tasks from "./Tasks/Tasks"
 import ControladorContainer from './ContainerBtnInp'
-import InputStyled from '../Input/InputStyled'
-import ButtonStyled from '../Button/ButtonStyled'
-import { ButtonStyledReset } from '../Button/ButtonStyled'
-import TaskCardStyled from '../Tasks/TasksContainer'
+import InputStyled from './Input/InputStyled'
+import ButtonStyled from './Button/ButtonStyled'
+import { ButtonStyledReset } from './Button/ButtonStyled'
+import { TaskCardStyled } from './Tasks/TasksContainer'
 import { BiReset } from 'react-icons/bi';
 
 /* Set Local Storage */
-const getLocalStorage = () => {
+export const getLocalStorage = () => {
   let tareas = localStorage.getItem('tareas');
   if (tareas) {
     return JSON.parse(localStorage.getItem('tareas'));
@@ -18,6 +18,7 @@ const getLocalStorage = () => {
     return [];
   }
 };
+
 
 /* Funcion inicializadora */
 const ToDo = () => {

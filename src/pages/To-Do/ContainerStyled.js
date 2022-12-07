@@ -4,7 +4,7 @@ const TodoContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-height: 100vh;
+height: 50vh;
 width: 100%;
 flex-direction: column;
 gap: 30px;
